@@ -1,0 +1,17 @@
+<div class="container box mt-5">
+  <div class="row">
+    <h2>Listado Clientes</h2>
+  </div>
+</div>
+<div class="container box">
+  <div class="row m-5">
+    <table class="table">
+      <tr *ngFor="let cli of listaClientes">
+        <td class="px-5 py-1">{{ cli.nombre }}</td>
+        <td class="px-5 py-1">{{ cli.cif }}</td>
+        <td class="px-5 py-1">{{ cli.direccion }}</td>
+        <td class="px-5 py-1">{{ cli.grupo }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

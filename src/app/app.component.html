@@ -1,0 +1,27 @@
+<div class="box">
+  <div class="titulo">
+    <h2>Alta cliente</h2>
+    <div class="formulario">
+      <label for="fname">Nombre:</label><br />
+      <input type="text" [(ngModel)]="nombre" /><br /><br />
+      <label for="lname">CIF:</label><br />
+      <input type="text" [(ngModel)]="cif" /><br /><br />
+      <label for="lname">Dirección:</label><br />
+      <input [(ngModel)]="direccion" type="text" /><br /><br />
+      <label for="grupo">Grupo: </label>
+      <select
+        [(ngModel)]="grupo"
+        class="form-select"
+        size="1"
+        aria-label="size 3 select example"
+      >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option></select
+      ><br />
+      <input type="submit" value="Guardar" (click)="anadir()" />
+    </div>
+  </div>
+</div>
+
+<app-listadoclientes [listaClientes]="listaClientes"></app-listadoclientes>
